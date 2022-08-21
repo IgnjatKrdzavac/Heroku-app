@@ -1,0 +1,33 @@
+{
+    "development": {
+      "username": "root",
+      "password": null,
+      "database": "shop",
+      "host": "127.0.0.1",
+      "dialect": "mariadb",
+      "logging": false
+    },
+    "test": {
+      "username": "root",
+      "password": null,
+      "database": "database_test",
+      "host": "127.0.0.1",
+      "dialect": "mysql"
+    },
+    "production": {
+      "username": "mvxtzqperanyyq",
+      "password": "33a7f9367ffe6b75a6b55ebfb50f6110c0d34ceb500dc535265ef97b45b62823",
+      "database": "dccrjkbgt5n2aj",
+      "host": "ec2-54-194-211-183.eu-west-1.compute.amazonaws.com",
+      "port": 5432,
+      "dialect": "postgres",
+      "logging": false,
+      "sll": true,
+      "dialectOptions": {
+        "ssl": {
+          "require": true,
+          "rejectUnauthorized": false
+        }
+      }
+    }
+  }
