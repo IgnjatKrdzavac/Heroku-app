@@ -34,7 +34,7 @@ const io = new Server(server, {
 });
 
 var corsOptions = {
-    origin: 'http://localhost:7000',
+    origin: '*',
     optionsSuccessStatus: 200,
     credentials: true
 }
