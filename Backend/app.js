@@ -26,7 +26,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
     cors: {
-        origin: 'http://localhost:8080',
+        origin: 'http://localhost:7000',
         methods: ['GET', 'POST'],
         credentials: true
     },
@@ -34,7 +34,7 @@ const io = new Server(server, {
 });
 
 var corsOptions = {
-    origin: 'http://localhost:8080',
+    origin: 'http://localhost:7000',
     optionsSuccessStatus: 200,
     credentials: true
 }
