@@ -18,6 +18,8 @@ require('dotenv').config();
 
 const app = express();
 
+const history = require('connect-history-api-fallback')
+
 
 const server = http.createServer(app);
 
@@ -129,9 +131,12 @@ const staticMdl = express.static(path.join(__dirname, 'dist'));
 
 app.use(staticMdl);
 
-// app.use(history({ index: '/index.html' }));
+app.use(history({ index: '/index.html' }));
 
-// app.use(staticMdl);
+app.use(staticMdl);
+
+
+
 
 
 
