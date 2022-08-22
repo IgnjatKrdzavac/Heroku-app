@@ -113,7 +113,11 @@ function authSocket(msg, next) {
 io.on('connection', socket => {
     //socket.use(authSocket);
     
+    
+
     socket.on('rec', msg => {
+
+        console.log(msg);
         recensions.create(msg)
             .then( rows => {
                 io.emit('rec', JSON.stringify(rows))
