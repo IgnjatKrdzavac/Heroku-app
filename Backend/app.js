@@ -117,7 +117,7 @@ io.on('connection', socket => {
 
     socket.on('rec', msg => {
 
-        console.log(msg);
+        console.log("HAHAHAHAAH");
         recensions.create(msg)
             .then( rows => {
                 io.emit('rec', JSON.stringify(rows))
